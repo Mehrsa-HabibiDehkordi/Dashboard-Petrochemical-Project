@@ -25,6 +25,7 @@
  
     <!-- Custom styles for this template -->
     <link href="./css/carousel.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
     <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
 
@@ -32,7 +33,7 @@
   <body class="py-0">
     
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="./img/Logo1.jpg" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +71,8 @@
 
 <main>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- <Carousel> -->
+  <div id="myCarousel" class="mb-3" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -81,8 +83,8 @@
       <div class="carousel-item active">
         <img src="./img/s11.jpg" class="d-block w-100" alt="...">
         <div class="w-100">
-          <div class="container-fluid">
-            <div class="carousel-caption text-right text-dark mx-3 px-5 my-3 py-5 bg-light">
+          <div class="container fluid">
+            <div class="carousel-caption text-right text-light bg-light px-5">
               <h1>بازگشت پتروشیمی فارابی به عرصه تولید و سودآوری</h1>
               <p>به گزارش روابط عمومی و امور بین الملل پتروشیمی فن آوران، شرکت پتروشیمی فارابی در دوره 6 ماهه منتهی به 1399/06/31 به ازای هر سهم، 12 ریال سود محقق کرده است.</p>
               <p><a class="btn btn-lg btn-primary" href="file:///C:/HabibiProjectBank/Habibi-PET/public/farabi.html" role="button">ادامه خبر</a></p>
@@ -93,9 +95,9 @@
       
       <div class="carousel-item">
         <img src="./img/s22.jpg" class="d-block w-100" alt="...">
-        <div class="w-100 bg-text-carousel">
+        <div class="w-100">
           <div class="container-fluid">
-            <div class="carousel-caption text-right text-dark mx-3 px-5 my-3 py-5 bg-light">
+            <div class="carousel-caption text-right text-light bg-light px-5">
               <h1>بازدید مهندس مخدومی مدیرعامل تاپیکو از مجتمع </h1>
               <p> صبح امروز مهندس مخدومی از شرکت های زیر مجموعه هلدینگ سرمایه گذاری نفت و گاز و پتروشیمی تامین (تاپیکو) بازدید، و از نزدیک در جریان روند پیشبرد امور قرار گرفت</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">ادامه خبر</a></p>
@@ -106,8 +108,8 @@
 
       <div class="carousel-item">
         <img src="./img/s33.jpg" class="d-block w-100" alt="...">
-        <div class="container">
-          <div class="carousel-caption text-right text-dark">
+        <div class="container-fluid">
+          <div class="carousel-caption text-right text-light bg-light px-5">
             <h1>آغاز به کار طرح فرهنگی خانه کتاب مجازی </h1>
             <p>این طرح در راستای  اصول مسئولیت های اجتماعی جاری در پتروشیمی ایران در قبال کارکنان و خانواده آنها بعنوان یکی از گروه های اصلی ذینغعان، با همراهی روابط عمومی شرکت سرمایه گذاری نفت و گاز و پتروشیمی تامین (تاپیکو)، برای نخستین بار در پتروشیمی فن آوران به اجرا درآمده است.</p>
             <p><a class="btn btn-lg btn-primary" href="file:///C:/HabibiProjectBank/Habibi-PET/public/library.html" role="button">ادامه خبر</a></p>
@@ -126,195 +128,228 @@
     </a>
   </div>
 
+<!-- Certificates -->
+  <div class="container-fluid row d-flex justify-content-between align-items-start mx-2 pb-3">
+    <h3 class="text-secondary text-center">گواهینامه و تندیس ها</h3>
+    <div class="w-100 bg-secondary pt-1 pb-1 rounded-pill mt-2 mb-4"></div>
+    <div class="">
+      <a href="#" class="px-1"><img src="img/cer/1.jpg" alt=""></a>
+      <a href="#" class="px-1"><img src="img/cer/2.jpg" alt=""></a>
+      <a href="#" class="px-1"><img src="img/cer/3.jpg" alt=""></a>
+      <a href="#" class="px-1"><img src="img/cer/4.jpg" alt=""></a>
+      <a href="#" class="px-1"><img src="img/cer/5.jpg" alt=""></a>
+      <a href="#" class="px-1"><img src="img/cer/6.jpg" alt=""></a>
+    </div>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+  </div>
 
-  <div class="container marketing">
-
+<!-- products -->
+  <div class="container-fluid marketing">
     <!-- Three columns of text below the carousel -->
-    <div class="row d-flex justify-content-between align-items-center">
-
+    <div class="row d-flex justify-content-between align-items-start mx-2">
       <h3 class="text-secondary text-center">تولیدات پتروشیمی ایران</h3>
       <div class="w-100 bg-secondary pt-1 pb-1 rounded-pill mt-2 mb-4"></div>
-      <div class="d-flex border">
+      <div class="row marketing container">
         <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner1.jpg" alt="">
-            <h2 class="mt-4">متانول</h2>
-            <p class="px-4">. میزان تقاضا برای متیل استات بستگی به میزان تولید استات سلولز دارد .متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. خت پاک و یا در تولید هیدروژن بسیار مورد توجه است</p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner1.jpg" alt="">
+              <h4 class="mt-4 justify-content-center">متانول</h4>
+              <p class="px-4">.متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. همچنین با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم متانول بسیار مورد توجه است </p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>
+            </div> 
           </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner2.jpg" alt="">
-            <h2 class="mt-4">اسید استیک</h2>
-            <p class="px-4">اسید استیک از واکنش بین متانول و گاز منوکسیدکربن در رآکتور حاوی کاتالیست کمپلکس رودیم و متیل یداید به عنوان تسریع کننده در دمای ۱۸۷ درجه سانتیگراد و فشار ۲۸ بار به دست می آید.  هزینه کل طرح می باشد. </p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner2.jpg" alt="">
+              <h4 class="mt-4">اسید استیک</h4>
+              <p class="px-4">  و از آن خیلی خوششان آمد.به گزارش روابط عمومی و امور بین الملل شرکت پتروشیمی فن آوران، صبح امروز مهندس پورزارع از شرکت های زیر مجموعه هلدینگ سرمایه گذاری نفت و پتروشیمی تامین (تاپیکو)  در جریان قرار گرفت.  </p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>        </div>
           </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner3.jpg" alt="">
-            <h2 class="mt-4">منوکسیدکربن</h2>
-            <p class="px-4">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از سولفورزدایی با بخار آب مخلوط شده  است.</p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner3.jpg" alt="">
+              <h4 class="mt-4">منوکسیدکربن</h4>
+              <p class="px-4">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از طراحی و اجرا سولفورزدایی با بخار آب مخلوط شده  است.</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>       </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div><!-- /.row -->
+  
+
+<!-- Metanool -->
+    <div class="metanool w-100 vh-100">
+      <div class="col-md-7 pt-5">
+        <h2 class="text-white">واحد متانول پتروشیمی ایران</h2>
+        <p class="text-white lead"> متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. همچنین با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم متانول به عنوان سوخت پاک و یا در تولید هیدروژن مصرفی پیل های سوختی، بسیار مورد توجه است. </p>
+        <a class="btn btn-secondary float-left text-white" href="#" role="button">اطلاعات بیشتر &raquo;</a>      </div>
+    </div>
+
+<!-- Metanool News -->
+    <div class="row d-flex justify-content-between align-items-start mx-2 mt-3">
+      <h3 class="text-secondary text-center">جدیدترین اخبار واحد متانول</h3>
+      <div class="w-100 bg-secondary pt-1 pb-1 rounded-pill mt-2 mb-4"></div>
+      <div class="row marketing container">
+        <div class="col-lg-4">
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner1.jpg" alt="">
+              <h4 class="mt-4 justify-content-center">شکست رکورد تولید متانول در سال در سال جهش تولید</h4>
+              <p class="px-4">متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند.با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم متانول به عنوان سوخت پاک مورد توجه بوده و مصرف مستقیم متانول به عنوان سوخت پاک مورد توجه است</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>
+            </div> 
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner2.jpg" alt="">
+              <h4 class="mt-4">بازدید مهندس پورزارع مدیرعامل تاپیکو از منطقه ویژه</h4>
+              <p class="px-4"> و  از نزدیک در جریان روند پیشبرد امور قرار گرفت. به گزارش روابط عمومی و امور بین الملل شرکت پتروشیمی فن آوران، صبح امروز مهندس پورزارع از شرکت های زیر مجموعه هلدینگ سرمایه گذاری نفت و گاز و پتروشیمی تامین (تاپیکو) بازدید مصرف مستقیم متانول قرار گرفت.</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>        </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner3.jpg" alt="">
+              <h4 class="mt-4">آغاز به کار طرح فرهنگی خانه کتاب مجازی در منطقه ویژه اقتصادی</h4>
+              <p class="px-4">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از سولفورزدایی با بخار آب مخلوط شده و در رآکتور پری ریفرمر موجود شکسته شده است.</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>       </div>
           </div>
         </div><!-- /.col-lg-4 -->
       </div>
     </div><!-- /.row -->
 
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">واحد متانول پتروشیمی ایران</h2>
-        <p class="lead"> متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. همچنین با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم متانول به عنوان سوخت پاک و یا در تولید هیدروژن مصرفی پیل های سوختی، بسیار مورد توجه است. </p>
-        <p><a class="btn btn-secondary float-left" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-      </div>
-      <div class="col-md-5">
-        <img src="img/5001.jpg" alt="">
-      </div>
+<!-- Asid -->
+    <div class="asid w-100 vh-100">
+      <div class="col-md-7 pt-5">
+        <h2 class="text-dark">واحد اسید استیک پتروشیمی ایران</h2>
+        <p class="text-dark lead">اسید استیک از واکنش بین متانول و گاز منوکسیدکربن در رآکتور حاوی کاتالیست کمپلکس رودیم و متیل یداید به عنوان تسریع کننده در دمای ۱۸۷ درجه سانتیگراد و فشار ۲۸ بار به دست می آید. سید استیک از واکنش بین متانول و گاز منوکسیدکربن در رآکتور حاوی کاتالیست کمپلکس رودیم و متیل یداید به عنوان تسریع کننده در دمای ۱۸۷ درجه سانتیگراد و فشار ۲۸ بار به دست می آید.</p>
+        <a class="btn btn-secondary float-left text-dark" href="#" role="button">اطلاعات بیشتر &raquo;</a>      </div>
     </div>
 
-    <div class="row mt-5">
 
-      <h3 class="text-secondary text-center">جدیدترین اخبار واحد متانول</h3>
-      <div class="w-100 bg-secondary pt-1 pb-1 rounded-pill mt-2 mb-4"></div>
-      <div class="d-flex border">
-        <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner1.jpg" alt="">
-            <h4 class="mt-4">شکست رکورد تولید متانول در سال در سال جهش تولید</h4>
-            <p class="px-4">.متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. همچنین با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم متانول به عنوان سوخت پاک بسیار مورد توجه است </p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-          </div>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner2.jpg" alt="">
-            <h4 class="mt-4">بازدید مهندس پورزارع مدیرعامل تاپیکو از منطقه ویژه</h4>
-            <p class="px-4"> به گزارش روابط عمومی و امور بین الملل شرکت پتروشیمی فن آوران، صبح امروز مهندس پورزارع از شرکت های زیر مجموعه هلدینگ سرمایه گذاری نفت و گاز و پتروشیمی تامین (تاپیکو) بازدید، و از نزدیک در جریان روند پیشبرد امور قرار گرفت.  </p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-          </div>   
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner3.jpg" alt="">
-            <h4 class="mt-4">آغاز به کار طرح فرهنگی خانه کتاب مجازی </h4>
-            <p class="px-4">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از سولفورزدایی با بخار آب مخلوط شده و در رآکتور پری ریفرمر موجود شکسته شده است.</p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-          </div>
-        </div><!-- /.col-lg-4 -->
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-6 order-md-2">
-        <h2 class="featurette-heading"> اسید استیک پتروشیمی ایران</h2>
-        <p class="lead">سید استیک از واکنش بین متانول و گاز منوکسیدکربن در رآکتور حاوی کاتالیست کمپلکس رودیم و متیل یداید به عنوان تسریع کننده در دمای ۱۸۷ درجه سانتیگراد و فشار ۲۸ بار به دست می آید. سید استیک از واکنش بین متانول و گاز منوکسیدکربن در رآکتور حاوی کاتالیست کمپلکس رودیم و متیل یداید به عنوان تسریع کننده در دمای ۱۸۷ درجه سانتیگراد و فشار ۲۸ بار به دست می آید.</p>
-        <p><a class="btn btn-secondary float-left" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-      </div>
-      <div class="col-md-6 order-md-1">
-        <img src="img/5002.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="row mt-5">
-
+<!-- Asid News -->
+    <div class="row d-flex justify-content-between align-items-start mx-2 mt-3">
       <h3 class="text-secondary text-center">جدیدترین اخبار واحد اسید استیک</h3>
       <div class="w-100 bg-secondary pt-1 pb-1 rounded-pill mt-2 mb-4"></div>
-      <div class="d-flex border">
+      <div class="row marketing container">
         <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner1.jpg" alt="">
-          <h4 class="mt-4">  تولید اسید به میزان 89999 تن در سال جهش تولید</h4>
-          <p class="px-4">.متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. همچنین با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم متانول به عنوان سوخت پاک بسیار مورد توجه است </p>
-          <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-          </div>     
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner1.jpg" alt="">
+              <h4 class="mt-4 justify-content-center">تولید اسید به میزان 89999 تن</h4>
+              <p class="px-4">اسیداستیک یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند.با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم ان به عنوان سوخت پاک مورد توجه بوده و مصرف مستقیم به عنوان سوخت پاک مورد توجه است</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>
+            </div> 
+          </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner2.jpg" alt="">
-          <h4 class="mt-4">بازدید مهندس حبیبی مدیرعامل پتروشیمی بندر امام </h4>
-          <p class="px-4"> به گزارش روابط عمومی و امور بین الملل شرکت پتروشیمی فن آوران، صبح امروز مهندس پورزارع از شرکت های زیر مجموعه هلدینگ سرمایه گذاری نفت و گاز و پتروشیمی تامین (تاپیکو) بازدید، و از نزدیک در جریان روند پیشبرد امور قرار گرفت.  </p>
-          <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-          </div>        
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner2.jpg" alt="">
+              <h4 class="mt-4">بازدید مدیرعامل پتروشیمی بندر امام</h4>
+              <p class="px-4">ه گزارش روابط عمومی و امور بین الملل شرکت پتروشیمی فن آوران، صبح امروز مهندس پورزارع از شرکت های زیر مجموعه هلدینگ سرمایه گذاری نفت و گاز و پتروشیمی تامین (تاپیکو) بازدید، و از نزدیک در جریان روند پیشبرد امور قرار گرفت.</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>        </div>
+          </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner3.jpg" alt="">
-            <h4 class="mt-4">  نظر سنجی سفرهای پاییزه از خانواده های شرکت کننده</h4>
-            <p class="px-4">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از سولفورزدایی با بخار آب مخلوط شده و در رآکتور پری ریفرمر موجود شکسته شده است.</p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner3.jpg" alt="">
+              <h4 class="mt-4">نظر سنجی سفرهای پاییزه</h4>
+              <p class="px-4">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از سولفورزدایی با بخار آب مخلوط شده و در رآکتور پری ریفرمر موجود شکسته شده است.</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>       </div>
           </div>
         </div><!-- /.col-lg-4 -->
       </div>
+    </div><!-- /.row -->
+
+<!-- CO -->
+    <div class="co w-100 vh-100">
+      <div class="col-md-7 pt-5">
+        <h2 class="text-dark">واحد منوکسیدکربن  پتروشیمی ایران</h2>
+        <p class="text-dark lead">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از سولفورزدایی با بخار آب مخلوط شده و در رآکتور پری ریفرمر ، هیدروکربن های سنگین موجود شکسته شده و نهایتاً گاز در ریفرمر به گاز سنتز غنی از منوکسید کربن تبدیل می شود.</p>
+        <a class="btn btn-secondary float-left text-dark" href="#" role="button">اطلاعات بیشتر &raquo;</a>      </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading"> منوکسیدکربن پتروشیمی ایران </h2>
-        <p class="lead">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از سولفورزدایی با بخار آب مخلوط شده و در رآکتور پری ریفرمر ، هیدروکربن های سنگین موجود شکسته شده و نهایتاً گاز در ریفرمر به گاز سنتز غنی از منوکسید کربن تبدیل می شود.</p>
-        <p><a class="btn btn-secondary float-left" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-      </div>
-      <div class="col-md-5">
-        <img src="img/5003.jpg" alt="">
-      </div>
-    </div>
-
-    <div class="row mt-5">
-
-      <h3 class="text-secondary text-center">جدیدترین اخبار واحد منواکسیدکربن</h3>
+<!-- CO News -->
+    <div class="row d-flex justify-content-between align-items-start mx-2 mt-3">
+      <h3 class="text-secondary text-center">جدیدترین اخبار واحد منواکسیدکربن </h3>
       <div class="w-100 bg-secondary pt-1 pb-1 rounded-pill mt-2 mb-4"></div>
-      <div class="d-flex border">
+      <div class="row marketing container">
         <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner1.jpg" alt="">
-            <h4 class="mt-4">تولید واحد به میزان 9000 تن در ماه گذشته</h4>
-            <p class="px-4">.متانول یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. همچنین با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم متانول به عنوان سوخت پاک بسیار مورد توجه است </p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
-          </div>  
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner2.jpg" alt="">
-            <h4 class="mt-4">بازدید دکتر نادری مدیرعامل  صنایع پتروشیمی</h4>
-            <p class="px-4"> به گزارش روابط عمومی و امور بین الملل شرکت پتروشیمی فن آوران، صبح امروز مهندس پورزارع از شرکت های زیر مجموعه هلدینگ سرمایه گذاری نفت و گاز و پتروشیمی تامین (تاپیکو) بازدید، و از نزدیک در جریان روند پیشبرد امور قرار گرفت.  </p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner1.jpg" alt="">
+              <h4 class="mt-4 justify-content-center">تولید واحد به میزان 9000 تن</h4>
+              <p class="px-4">CO یکی از سه محصول بسیار مهم صنایع شیمیایی در دنیا بوده و مواد بسیاری از آن مشتق می شوند. همچنین با توجه به کمبود قابل پیش بینی منابع انرژی در آینده، مصرف مستقیم متانول به عنوان سوخت پاک بسیار مورد توجه است</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>
+            </div> 
           </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <div class="mt-3">
-            <img class="rounded-3" src="img/Baner3.jpg" alt="">
-            <h4 class="mt-4">  نظر سنجی هدایای روز زن از خانواده های شرکت کننده</h4>
-            <p class="px-4">به منظور تولید سالیانه ۱۴۰ هزار تن گاز منوکسید کربن با خوراک سالیانه ، ۸۴ هزار تن گازطبیعی از شرکت ملی گاز ایران طراحی و اجرا شده است. خوراک این واحد پس از سولفورزدایی با بخار آب مخلوط شده و در رآکتور پری ریفرمر موجود شکسته شده است.</p>
-            <p><a class="btn btn-secondary float-left mb-2" href="#" role="button">اطلاعات بیشتر &raquo;</a></p>
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner2.jpg" alt="">
+              <h4 class="mt-4">بازدید مدیرعامل صنایع پتروشیمی</h4>
+              <p class="px-4">ه گزارش روابط عمومی و امور بین الملل شرکت پتروشیمی فن آوران، صبح امروز مهندس پورزارع از شرکت های زیر مجموعه هلدینگ سرمایه گذاری نفت و گاز و پتروشیمی تامین (تاپیکو) بازدید، و از نزدیک در جریان روند پیشبرد امور قرار گرفت.</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>        </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="border p-2 bg-white">
+            <div class="mt-3">
+              <img class="rounded-3" src="img/Baner3.jpg" alt="">
+              <h4 class="mt-4">نظر سنجی هدایای روز زن</h4>
+              <p class="px-4">امروز چهارشنبه در پتروشیمی ایران مراسم روز زن برگزار شد  و کلیه خانم های سایت و دفتر مرکزی با هم ارتباط برقرار کردند و مدیریت محترم عتمل و مدیر مجتمع سخنرانی هایی داشته و از مقام شامخ زن تجلیل کردند. هدایایی به رسم یادبود نیز به خانم های شرکت تقدیم گردید.</p>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-secondary me-auto" href="#" role="button">اطلاعات بیشتر &raquo;</a>
+              </div>       </div>
           </div>
         </div><!-- /.col-lg-4 -->
       </div>
-    </div>
+    </div><!-- /.row -->
 
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
 
 
-  <!-- FOOTER -->
+<!-- Footer -->
+  <footer class="footer d-flex align-items-start bg-primary px-5 py-5">
 
-  <footer class="footer d-flex align-items-center w-100 vh-100 pr-5 pl-5 bg-dark mt-5 py-0">
-    <div class="contact-me col-md-6 d-flex flex-column align-items-start">
-      <h3 class="text-white mb-5">تماس با ما</h3>
-      <p class="text-white mb-4">پتروشیمی ایران اولین تولید کننده دی اکتیل فتالات و نیز تولید کننده عمده انیدرید فتالیک پرک در کشور می باشد که علیرغم وجود موانع شدید در مسیر تولید، توانست با استفاده از فرصت های فراهم آمده و حمایت شرکت های پتروشیمی فن آوران و امیر کبیر بعنوان سهامداران حقوقی عمده، در پی توجه به ظرفیت ها و پتانسیل در اختیار و با تکیه بر توان متخصصین و کارکنان پرتلاش خود از وضعیت زیان خارج و به سود عملیاتی به مبلغ ۳۰,۴۷۴ میلیون ریال تا پایان شش ماهه نخست سال جاری دست پیدا کند.</p>
+    <div class="contact-me col-md-6 d-flex flex-column">
+      <h3 class="text-white mb-4">تماس با ما</h3>
+      <p class="text-white mb-4 pr-4">پتروشیمی ایران اولین تولید کننده دی اکتیل فتالات و نیز تولید کننده عمده انیدرید فتالیک پرک در کشور می باشد که علیرغم وجود موانع شدید در مسیر تولید، توانست با استفاده از فرصت های فراهم آمده و حمایت شرکت های پتروشیمی فن آوران و امیر کبیر بعنوان سهامداران حقوقی عمده، در پی توجه به ظرفیت ها و پتانسیل در اختیار و با تکیه بر توان متخصصین و کارکنان پرتلاش خود از وضعیت زیان خارج و به سود عملیاتی به مبلغ ۳۰,۴۷۴ میلیون ریال تا پایان شش ماهه نخست سال جاری دست پیدا کند.</p>
       <div class="social-network">
         <a href="#" class=""><img src="img/Instagram.png" alt=""></a>
         <a href="#" class=""><img src="img/Facebook.png" alt=""></a>
@@ -324,29 +359,41 @@
     </div>
     
     <div class="col-md-3 pr-4">
-      <h3 class="text-right text-white mb-5">سایت های مرتبط</h3>
-      <div class="d-flex flex-column">
+      <h3 class="text-right text-white mb-4">سایت های مرتبط</h3>
+      <div class="d-flex flex-column pr-4">
         <a class="text-white" href="#">سایت پتروشیمی بندر امام</a>
         <a class="text-white" href="#">سایت پتروشیمی تهران</a>
-        <a class="text-white" href="#">سایت فارابی</a>
+        <a class="text-white" href="#">سایت پتروشیمی فارابی</a>
         <a class="text-white" href="#">سایت پتروشیمی ایلام  </a>
         <a class="text-white" href="#"> سایت پتروشیمی امیرکبیر</a>
         <a class="text-white" href="#">سایت پتروشیمی رازی</a>
       </div>
     </div>
-
+  
     <div class="col-md-3">
-      <h3 class="text-right text-white mb-5">دریافت  خبرنامه</h3>
-      <div class="mb-2">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <h3 class="text-right text-white mb-4">دریافت  خبرنامه</h3>
+      <div class="pr-4">
+        <div class="mb-2">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ایمیل خود را وارد کنید">
+        </div>
+        <div class="mb-2">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary float-left">ارسال</button>
       </div>
-      <div class="mb-2">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-secondary float-left">ارسال</button>
     </div>
-
+  
   </footer>
+
+<!-- /design-by/ -->
+  <div class="d-flex flex-column align-items-center bg-dark">
+    <p class="text-white mt-3">قالب بلاگ طراحی شده است توسط : <a class="text-white" href="https://mahcitysale.ir/"> مهرسا حبیبی دهکردی</a></p>
+    <p class="text-white"> <a class="text-white" href="https://mahcitysale.ir/">بازگشت به بالا</a> </p>
+  </div>
+  
+
+
+
 
 </main>
 

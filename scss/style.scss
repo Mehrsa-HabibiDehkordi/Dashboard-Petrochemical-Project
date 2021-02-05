@@ -14,8 +14,9 @@
     & .container {
         & .collapse {
             & form {
-                background-color: #3d3d3d;
-                border: 1px solid #303030;
+                width: 300px;
+                background-color: #95999b;
+                border: 1px solid #5C636A;
                 & > input, & button {
                     background-color: transparent;
                     border: none;
@@ -64,10 +65,38 @@
     }
 }
 
-.bg-text-carousel {
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 50%;
-    opacity: .6;
+.carousel-caption {
+    background-color: rgba(0,0,0,.4) !important;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
 }
+
+.metanool {
+    background-image: url('../img/5001.jpg');
+    background-size: 100%;
+    & p, & h2{
+        text-align: justify;
+        margin-right: 6rem;
+    }
+}
+
+.asid {
+    background-image: url('../img/5002.jpg');
+    background-size: 50%;
+    & p, & h2{
+        text-align: justify;
+        margin-right: 6rem;
+    }
+}
+
+.co {
+    background-image: url('../img/5003.jpg');
+    background-size: 50%;
+    & p, & h2{
+        text-align: justify;
+        margin-right: 6rem;
+    }
+}
+
 
